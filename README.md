@@ -8,7 +8,7 @@ Two LXC containers are created on a Raspberry Pi, where the first container cont
 
 ### LXC network bridge
 
-The guide at [1] was used to create the network bridge for the LXC containers. This guide was also used to setup static IPs for the two containers, but this did not seem to always work, which is why the [startup instructions](#startup_instructions) does not rely on this.
+The guide at [1] was used to create the network bridge for the LXC containers. This guide was also used to setup static IPs for the two containers, but this did not seem to always work, which is why the [startup instructions](#startup-instructions) does not rely on this.
 
 ### Containers
 
