@@ -51,5 +51,5 @@ Instruction 3 allows access to the first container, where the OpenRC system is r
 `http://raspberrypi.local` can now be used to access the first container's web server providing random numbers.
 
 ## Sources
-[1] https://angristan.xyz/setup-network-bridge-lxc-net/
-[2] https://help.ubuntu.com/lts/serverguide/lxc.html#lxc-unpriv 
+- [1] https://angristan.xyz/setup-network-bridge-lxc-net/
+- [2] https://help.ubuntu.com/lts/serverguide/lxc.html#lxc-unpriv 
