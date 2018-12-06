@@ -22,7 +22,7 @@ One issue with FastCGI for the Lighttpd web server was that it could not find th
 ```
 2018-12-05 20:46:25: (mod_fastcgi.c.1102) the fastcgi-backend /usr/bin/php-cgi5 failed to start:                                                                                          
 2018-12-05 20:46:25: (mod_fastcgi.c.1106) child exited with status 2 /usr/bin/php-cgi5                                                                                                    
-2018-12-05 20:46:25: (mod_fastcgi.c.1109) If you're trying to run your app as a FastCGI backend, make sure you're using the FastCGI-enabled version.\nIf this is PHP on Gentoo, add 'fastc
+2018-12-05 20:46:25: (mod_fastcgi.c.1109) If you're trying to run your app as a FastCGI backend, make sure you're using the FastCGI-enabled version....
 2018-12-05 20:46:25: (mod_fastcgi.c.1395) [ERROR]: spawning fcgi failed.                                                                                                                  
 2018-12-05 20:46:25: (server.c.1030) Configuration of plugins failed. Going down.  
 ```
