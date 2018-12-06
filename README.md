@@ -8,7 +8,7 @@ Two LXC containers are created on a Raspberry Pi, where the first container cont
 
 ### LXC network bridge
 
-The guide at [1] was used to create the network bridge for the LXC containers. This guide was also used to setup static IPs for the two containers, but this did not seem to always work, which is why the [startup instructions](/Startup_instructions) does not rely on this.
+The guide at [1] was used to create the network bridge for the LXC containers. This guide was also used to setup static IPs for the two containers, but this did not seem to always work, which is why the [startup instructions](#startup_instructions) does not rely on this.
 
 ### Containers
 
@@ -47,6 +47,8 @@ The instructions after boot to start the containers and run their respective ser
 Instruction 1 starts both LXC containers. Since the IP-addresses are not assigned immediately, the containers are listed until the IP-address is available. This is necessary for the port forwarding in instruction 2, where the IP-address is needed to add a new rule to expose the Lighttpd web server on port `80` to the outside world through the Raspberry Pi's port `80`. Since the Raspberry Pi is connected as a USB gadget, the `usb0` interface is used for the connection.
 
 Instruction 3 allows access to the first container, where the OpenRC system is run to start the preconfigured Lighttpd web server. Instruction 4 allows access to the second container, where socat is run (as per the provided slides), directing network traffic to run the `rng.sh` script on port `8080`.
+
+`http://raspberrypi.local` can now be used to access the first container's web server providing random numbers.
 
 ## Sources
 [1] https://angristan.xyz/setup-network-bridge-lxc-net/
